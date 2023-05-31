@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dd,dt {padding: 5px;}
+        body { background-color: red;}
+        @media (max-width: 992px) {
+            body{
+            background-color: green;
+            }
+        }
+        @media(min-width: 700px) and (max-width:800px) {
+            body{
+                background-color: antiquewhite;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Day 7</h2>
+    <p style="text-align: right;">Date: 29-02-2023</p>
+    <h2><u>Notes</u></h2>
+    <dl>
+        <dt>Media Queries</dt>
+        <dd>We have to define these in both html and css
+        <ul>
+            <li>HTML</li><dd> " doctype html" <br/> "meta name="viewport" content="width=device-width initial-scale=1" </dd>
+            <li>CSS</li><dd>@media(screen-width){ <br> selector{ <br>property:value;<br>}} </dd>
+                        <table border="black">
+                            <caption >Screen Sizes</caption>
+                            <tr>
+                                <th>Sizes</th>
+                                <th>Measurements</th>
+                                <th>Device</th>
+                            </tr>
+                            <tr>
+                                <td>xs</td>
+                                <td>486px - 575px</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>small</td>
+                                <td>675px - 768px </td>
+                                <td>smart phones</td>
+                            </tr>
+                            <tr>
+                                <td>medium</td>
+                                <td>768px - 992px</td>
+                                <td>tablet</td>
+                            </tr>
+                            <tr>
+                                <td>large</td>
+                                <td>992px-1200px,1366px</td>
+                                <td>laptop</td>
+                            </tr>
+                            <tr>
+                                <td>xl</td>
+                                <td>1200px,1366px - 1586px</td>
+                                <td></td>
+                            </tr>
+                        </table>
+        </ul>
+        </dd>
+    </dl>
+</body>
+</html>
