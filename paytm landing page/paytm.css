@@ -37,7 +37,7 @@ header {position: sticky;top:0;z-index: 10;}
     text-decoration: none;
     color: black;
     font-family: 'Inter',sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     padding: 1%;
 }
@@ -164,6 +164,7 @@ header {position: sticky;top:0;z-index: 10;}
 .s3_1 #dpa {width: 50%;}
 .s3_1 #para {line-height: 26px;padding: 4% 0% 0% 0%;}
 .s3_1 .right { width: 50% !important; }
+#r1 {width: 430px !important;}
 
 #tab4 .s3_1.img img {width:180px}
 #tab4 #left1 h1 {max-width: 100% !important;margin:0}
@@ -206,6 +207,7 @@ header {position: sticky;top:0;z-index: 10;}
 #sec6 { padding:0;padding-top: 10px; background-color: #f5f7fa; padding-bottom: 70px; z-index: 1; position:relative}
 #sec6 .s3_1{background-color: transparent !important;padding-bottom: 0px; width:80%; margin-left:5%;}
 #sec6 .s3_1.img img {width: 500%;background-color: transparent;}
+#sec6 .right {width: 470px !important;}
 #sec6 #bg
 {
     width:100%;
