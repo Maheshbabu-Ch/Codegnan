@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clic()
+        {
+            var name = document.getElementById('name').value;
+            var gender= document.getElementByIdcc('gender').value;
+            alert("Your name is: " + name + " You are a " + gender)
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="name" placeholder="enter your name">
+    Gender: 
+    <input type="radio" name="gender" id="gender" >Male 
+    <input type="radio" name="gender" id="gender" value="Female">Female
+    <button onclick="clic()">Click Me</button>
+</body>
+</html>
