@@ -6,20 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function clic()
-        {
-            var name = document.getElementById('name').value;
-            var gender= document.getElementByIdcc('gender').value;
-            alert("Your name is: " + name + " You are a " + gender)
-        }
+        // function clic()
+        // {
+        //     var name = document.getElementById('name').value;
+        //     var gender= document.getElementByIdcc('gender').value;
+        //     alert("Your name is: " + name + " You are a " + gender)
+        // }
+            function validate()
+            {
+                var firstName = document.getElementById('first_name').value;
+                var mobileno = document.getElementById('mobile').value;
+                var email = document.getElementById('email').value;
+                var pswd = document.getElementById('pswd').value;
+                var usphone = document.getElementById('usphone').value;
+                var nameregex = /^[a-zA-Z]+$/;
+                var mobileregex =/^[0-9]{10}$/;
+                var emailregex = /^[a-z.#0-9]+@[a-z]+\.[a-z]{2,3}$/;
+                var pswdregex = /^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{4,6}$/;
+                var usphoneregex = /^\([0-9]{3}\)\ [0-9]{3}\-[0-9]{4}$/;
+                if(firstName.length <= 3)
+                {
+                    alert("Please enter your first name");
+                    return false;
+                }
+                if(!firstName.match(nameregex))
+                {
+                    alert("Name should contain only alphabets");
+                    return false;
+                }
+                if(!mobileno.match(mobileregex))
+                {
+                    alert('Enter a valid mobile Number');
+                    return false
+                }
+                if(!email.match(emailregex))
+                {
+                    alert('Enter a valid email address')
+                    return false
+                }
+                if(!password.match(pswdregex))
+                {
+                    alert('Password must contain 1 small letter, 1 capital letter and 1 digit'); 
+                    return false;
+                }
+                if(!usphone.match(usphoneregex))
+                {
+                    alert('Enter a valid US Mobile Number')
+                    return false
+                }
+                const password = "Abcd123";
+                const pswdRegex = /^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{4,6}$/;
 
+                const isValid = pswdRegex.test(password);
+                console.log(isValid); // Output: true
+
+                return true
+            }
     </script>
 </head>
 <body>
-    <input type="text" name="" id="name" placeholder="enter your name">
+    <!-- <input type="text" name="" id="name" placeholder="enter your name">
     Gender: 
     <input type="radio" name="gender" id="gender" >Male 
     <input type="radio" name="gender" id="gender" value="Female">Female
-    <button onclick="clic()">Click Me</button>
+    <button onclick="clic()">Click Me</button> -->
+    <form onsubmit="return validate()">
+        <!-- <p><input type="text" placeholder="Enter your First Name" id="first_name" ></p>
+        <p><input type="text" placeholder="Enter your Mobile Number" id="mobile"></p>
+        <p><input type="text" placeholder="Enter your Email" id="email"></p> -->
+        <p><input type="text" placeholder="Enter your password" id="pswd"></p>
+        <p><input type="text" placeholder="Enter an US mobile number" id="usphone"></p>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
